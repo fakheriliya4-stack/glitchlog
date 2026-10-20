@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Glitchlog | آوانگارد در تکنولوژِی</title>
+  <meta name="description" content="Glitchlog؛ جایی برای ثبت پروژه‌ها و آزمایش‌های برنامه‌نویسی با وب و Python.">
+  <meta name="theme-color" content="#08090d">
+  <link rel="icon" href=favicon.png" type="image/png">
+  <!-- فونت‌ها اختیاری‌اند؛ اگر بارگذاری نشوند فونت‌های سیستم جایگزین می‌شوند -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&family=Vazirmatn:wght@400;600;800&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script src="projects.js" defer></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#home">پرش به محتوا</a>
+
+  <header class="site-header">
+    <div class="shell bar">
+      <a class="brand" href="#home" aria-label="Glitchlog، بازگشت به بالای صفحه">
+        <img src="logo-mark.png" width="420" height="370" alt="">
+        <span class="brand__name" dir="ltr">Gl<b>i</b>tchlog</span>
+      </a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">منو</button>
+      <nav id="nav" class="nav" aria-label="بخش‌های سایت">
+        <a href="#home">خانه</a>
+        <a href="#identity">هویت</a>
+        <a href="#projects">پروژه ها</a>
+        <a href="#about">درباره</a>
+        <a href="https://t.me/glitchlog_channel">کانال تلگرام</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="shell stage">
+      <section id="home" class="hero card" aria-labelledby="hero-title">
+        <p class="mono" dir="ltr">&gt; build. break. log.</p>
+        <h1 id="hero-title" dir="ltr">Gl<b>i</b>tchlog</h1>
+        <p class="lead">خلاقیت،رمز بازگشایی دروازه های پیشرفت.</p>
+        <p>Glitchlog دفترچهٔ عمومی من برای برنامه‌نویسی است: وب، Python و آزمایش‌هایی که با ساختن‌شان یاد می‌گیرم، همراه با مسیری که تا آن‌ها طی می‌شود.</p>
+        <div class="actions">
+          <a class="btn btn--primary" href="#projects">پروژه ها</a>
+          <a class="btn btn--ghost" href="#about">توسط که؟</a>
+        </div>
+      </section>
+
+      <section id="identity" class="identity" aria-labelledby="identity-title">
+        <h2 id="identity-title">چرا Glitchlog؟</h2>
+        <div class="features">
+          <article class="card feature"><code dir="ltr">build()</code><h3>یادگیری با ساختن</h3><p>هر مفهوم تازه باید به یک پروژهٔ کارا تبدیل شود، نه فقط یادداشت.</p></article>
+          <article class="card feature"><code dir="ltr">try { … }</code><h3>آزمایش با هدف</h3><p>وب، Python و برنامه‌نویسی خلاق؛ هر آزمایش با یک سؤال شروع می‌شود.</p></article>
+          <article class="card feature"><code dir="ltr">log()</code><h3>پیشرفت در دید همه</h3><p>پروژه‌ها، درس‌ها و مراحل ساخت، منتخب و صادقانه ثبت می‌شوند.</p></article>
+        </div>
+      </section>
+
+      <section id="projects" class="panel card" aria-labelledby="projects-title">
+        <h2 id="projects-title">پروژه ها</h2>
+        <div id="project-list" class="project-list"></div>
+        <noscript><p class="muted">برای دیدن فهرست پروژه‌ها جاوااسکریپت را فعال کنید.</p></noscript>
+      </section>
+    </div>
+
+    <section id="about" class="shell about" aria-labelledby="about-title">
+      <div class="card about__card">
+        <img class="about__mark" src="assets/images/logo-mark.png" width="420" height="370" alt="نشان Glitchlog">
+        <div>
+          <h2 id="about-title">توسط که؟</h2>
+          <p>glitchlog متعلق به کسی میباشد که افکارش خارج از چارچوب توانش است،و او هربار که کاری را شروع میکند توانایی هایش را برای رسیدن به آن نتیجه بالا میبرد.</p>
+          <ul class="tags" aria-label="حوزه‌های کاری">
+            <li>توسعهٔ وب</li><li>Python</li><li>کاربری بهتر از هوش مصنوعی</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell foot">
+      <p><span class="brand__name" dir="ltr">Gl<b>i</b>tchlog</span> · خلاقیت،رمز بازگشایی دروازه های پیشرفت.</p>
+      <nav aria-label="پیوندهای پایین صفحه">
+        <a href="#home">خانه</a><a href="#identity">هویت</a><a href="#projects">پروژه ها</a><a href="#about">درباره <br> <a href="https://t.me/glitchlog_channel"> کانال اصلی</a>
+      </nav>
+      <p class="muted">© <span id="year">2026</span> Glitchlog</p>
+    </div>
+  </footer>
+</body>
+</html>
